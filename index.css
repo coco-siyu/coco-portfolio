@@ -1,3 +1,5 @@
+
+
 /* --------------------------------------- */
 /* ----- Basic Setup ----- */
 /* --------------------------------------- */
@@ -38,6 +40,8 @@
     --pink: #ff3258;
     --white: #f0e9f2;
     --white-1: #e5e5e6da;
+    --slate-green: #35524A;
+    --slate-gray: #020202;
 
 
     --container-max-width: 1180px;
@@ -72,7 +76,7 @@ body {
     font-weight: 400;
     color: var(--white-1);
     line-height: var(--line-height-normal);
-    background: var(--black);
+    background: var(--slate-green);
     overflow-x: hidden;
 }
 
@@ -219,7 +223,7 @@ body:not(.user-is-tabbing) a:focus {
     padding: 1rem 4.2rem;
     text-decoration: none;
     color: inherit;
-    border: 1px solid  var(--pink);
+    border: 1px solid  var(--slate-gray);
     font-weight: 400;
 }
 
@@ -243,11 +247,11 @@ body:not(.user-is-tabbing) a:focus {
 .btn:hover::after,
 .btn:focus::after {
     right: 0;
-    background: var(--pink);
+    background: var(--slate-gray);
 }
 
 .btn--pink {
-    background: var(--pink);
+    background: var(--slate-gray);
     transition: all 0.2s;
 }
 
@@ -404,7 +408,7 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 
 .header {
-    background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
+    background: var(--slate-green), 
         url('./images/header.jpg');
     height: 100vh;
     background-size: cover;
@@ -611,3 +615,4 @@ body:not(.user-is-tabbing) a:focus {
         padding: var(--gutter-medium) 0;
     } 
 }
+
